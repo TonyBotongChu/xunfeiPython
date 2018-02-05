@@ -1,0 +1,5 @@
+*.wav
+*.so
+login_params
+__pycache__
+msc
