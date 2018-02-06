@@ -118,12 +118,13 @@ class recorder:
                 # 将save_buffer中的数据写入WAV文件，WAV文件的文件名是保存的时刻
                 #print "debug"
                 if len(save_buffer) > 0:
-                    print("Record a piece of  voice successfully!")
+                    #print("Record a piece of  voice successfully!")
                     text = self.msp.isr(save_buffer, session_begin_params)  
                     text = stringutils.punctuationDelete(text)
                     print("punction delete: " + text)
                     save_count = 0
                     save_buffer = []
+                    return text
 
 
 if __name__ == "__main__":
