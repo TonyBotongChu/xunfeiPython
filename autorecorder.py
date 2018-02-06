@@ -130,7 +130,8 @@ class recorder:
 if __name__ == "__main__":
     r = recorder()
     try:
-        r.autorecord()
+        while True:
+            r.autorecord()
     except Exception as e:
         print(e)
     finally:
